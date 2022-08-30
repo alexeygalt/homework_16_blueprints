@@ -4,7 +4,7 @@ from db.models import db, User
 users_blueprint = Blueprint('users_blueprint', __name__)
 
 
-@users_blueprint.route('/users', methods=['GET', 'POST'])
+@users_blueprint.route('/users/', methods=['GET', 'POST'])
 def get_all_users():
     if request.method == 'GET':
         users = User.query.all()
