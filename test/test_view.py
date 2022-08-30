@@ -1,4 +1,5 @@
-from db.models import app
+# from db.models import app
+from app import app
 
 
 def test_get_all_users():
